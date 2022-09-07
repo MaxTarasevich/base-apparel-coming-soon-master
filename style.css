@@ -1,0 +1,113 @@
+:root{
+    --red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-red: hsl(0, 6%, 24%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+h1,p{
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    background-color: hsla(0, 36%, 70%,0.1);
+}
+
+img,picture{
+    display: block;
+}
+
+.hero{
+    display: flex;
+}
+
+.hero__content{
+    padding: 75px 0px;
+    flex-grow: 1;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__logo,
+.hero__title,
+.hero__text,
+.hero__form{
+    max-width: 445px;
+    margin: 0 auto;
+}
+
+.hero__title{
+    margin-top: 136px;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.11;
+    text-transform: uppercase;
+    color: var(--dark-red);
+}
+
+.hero__title span{
+    font-weight: 300;
+    color: var(--red);
+}
+
+.hero__text{
+   margin-top: 32px;
+   color: var(--red);
+   line-height: 1.75;
+}
+
+.hero__form{
+    margin-top: 40px;
+    position: relative;
+}
+
+.hero__form input{
+    width: 100%;
+    padding: 15px 30px;
+    outline: none;
+    border: 1px solid var(--red);
+    border-radius: 28px;
+    opacity: 0.5;
+    color: var(--red);
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.hero__form button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 46px;
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+.hero__form button img{
+    width: 9px;
+}
+
+.hero__img{
+ width: 43%;
+}
+
+.hero__img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
