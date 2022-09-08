@@ -34,9 +34,11 @@
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
 
-        <form action="#" class="hero__form">
-          <input type="email" name="email" id="email" placeholder=" Email Address">
-          <button type="submit"><img src="./images/icon-arrow.svg" alt="Button icon"></button>
+        <form action="#" novalidate class="hero__form">
+          <input type="email" name="email" class="email" placeholder=" Email Address" required>
+          <button class="btn" type="submit"><img src="./images/icon-arrow.svg" alt="Button icon"></button>
+          <span class="error" aria-live="polite"></span>
+          <img src="./images/icon-error.svg" alt="Error icon" class="error__icon">
         </form>
     </div>
 
@@ -53,5 +55,8 @@
       Coded by <a href="https://www.frontendmentor.io/profile/MaxTarasevich" target="_blank">Maksim</a>.
     </p>
   </footer>
+
+  <script src="./script.js"></script>
+
 </body>
 </html>
